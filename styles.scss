@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 10vw;
+  gap: 4vh;
+  font-size: clamp(12px, 1.5vw, 15px);
+  h1 {
+    text-align: center;
+    color: brown;
+    font-size: 3em;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+    min-height: 270px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 10px 3px rgba(128, 128, 128, 0.455);
+    border-radius: 7px;
+    width: fit-content;
+    margin: auto;
+
+    h2 {
+      text-align: center;
+      color: rgb(101, 27, 27);
+      font-size: 2em;
+    }
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      > div {
+        width: 60px;
+        height: 60px;
+        background-color: rgb(60, 60, 60);
+        display: flex;
+        padding: 5px;
+        border-radius: 3px;
+        box-shadow: 1px 2px 2px 8px rgba(40, 40, 40, 0.5);
+        opacity: 0.9;
+        cursor: pointer;
+        transition: all ease-in-out 0.2s;
+        &:hover {
+          opacity: 1;
+        }
+        p {
+          color: white;
+        }
+        &:active {
+          background-color: rgb(34, 34, 34);
+          opacity: 1;
+          transform: translateY(2px);
+          box-shadow: 1px 2px 2px 6px rgba(40, 40, 40, 0.5);
+        }
+      }
+    }
+  }
+  .drums-container {
+    background-image: url("https://www.musicca.com/files/scripts/drumkit/static/media/drum-kit.eb6cdcf0.png");
+  }
+  .kalimba-container {
+    background-image: url("https://images.musicstore.de/images/0960/magadi-mag-m32-tp-kalimba-thumb-piano-32-key-kirsche_1_DRU0041356-000.jpg");
+  }
+}
+.key-down {
+  background-color: rgb(34, 34, 34);
+  opacity: 1;
+  transform: translateY(2px);
+  box-shadow: 1px 2px 2px 6px rgba(40, 40, 40, 0.5);
+}
